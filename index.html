@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Personal - Jonny Ronald Chambi Canahuire</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #5AF527;
+            --secondary: #27C1F5;
+            --accent: #C127F5;
+            --highlight: #F55A27;
+        }
+        .bg-custom-gradient {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        }
+        .border-primary { border-color: var(--primary); }
+        .text-primary { color: var(--primary); }
+        .text-secondary { color: var(--secondary); }
+        .text-accent { color: var(--accent); }
+        .text-highlight { color: var(--highlight); }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            border-left: 4px solid var(--secondary);
+        }
+        .project-badge {
+            background: rgba(39, 193, 245, 0.1);
+            border: 1px solid var(--secondary);
+            color: var(--secondary);
+        }
+        .metric-box {
+            border-bottom: 3px solid var(--highlight);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+    <!-- Header / Hero Section -->
+    <header class="bg-custom-gradient text-white py-16 px-6 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-secondary opacity-5 rounded-full -mr-20 -mt-20"></div>
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 relative z-10">
+            <div class="w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden border-4 border-white shadow-2xl shrink-0">
+                <img src="foto.jpeg" alt="Jonny Ronald Chambi Canahuire" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/400x400?text=Jonny+Chambi'">
+            </div>
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold mb-2">Jonny Ronald Chambi Canahuire</h1>
+                <p class="text-xl md:text-2xl text-secondary font-light mb-4">Gerente General | CDO | Especialista en Data Analytics e IA</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-6">
+                    <span class="flex items-center gap-2"><i class="fas fa-envelope text-primary"></i> jonny.chambi@dmc.pe</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-phone text-primary"></i> 924336951</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-primary"></i> Lima, Perú</span>
+                </div>
+                <div class="flex gap-4 justify-center md:justify-start">
+                    <a href="mailto:jonny.chambi@dmc.pe" class="bg-secondary hover:bg-opacity-80 text-white px-6 py-2 rounded-full font-bold transition-all">Contactar</a>
+                    <a href="#" class="border border-primary text-primary hover:bg-primary hover:text-black px-6 py-2 rounded-full font-bold transition-all">Descargar CV</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Resumen Ejecutivo -->
+    <section class="py-16 px-6 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row gap-12">
+            <div class="md:w-2/3">
+                <h2 class="text-3xl font-bold mb-6 border-b-2 border-primary inline-block">Resumen Profesional</h2>
+                <p class="text-lg text-gray-600 mb-6">
+                    MBA por la UPC con especialización en Marketing y Gestión Comercial e Ingeniero Estadístico por la UNI. Más de <strong>15 años de experiencia</strong> liderando la estrategia y ejecución de proyectos de <strong>Data Analytics</strong> en sectores críticos como Banca, Telecomunicaciones y AFP.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-accent mt-1"></i>
+                        <span>Liderazgo de equipos multidisciplinarios bajo metodologías ágiles.</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-accent mt-1"></i>
+                        <span>Experto en SQL Server, Power BI, Python y Modelamiento Predictivo.</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-accent mt-1"></i>
+                        <span>Transformación Digital y Cultura Data-Driven.</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-accent mt-1"></i>
+                        <span>Estrategias de Customer Value Management (CVM).</span>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/3 bg-white p-8 rounded-2xl shadow-lg border-t-4 border-highlight">
+                <h3 class="text-xl font-bold mb-4">Competencias Clave</h3>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium">Estrategia Analítica</span>
+                            <span class="text-sm font-medium">100%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-secondary h-2 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium">Modelos Predictivos</span>
+                            <span class="text-sm font-medium">95%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-accent h-2 rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium">Gobierno de Datos</span>
+                            <span class="text-sm font-medium">90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-primary h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impacto en Cifras (Logros) -->
+    <section class="bg-gray-900 text-white py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Logros e Impacto en Indicadores</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center p-6 metric-box bg-white/5 rounded-lg">
+                    <div class="text-4xl font-bold text-secondary mb-2">+15</div>
+                    <div class="text-sm uppercase tracking-wider">Años de Experiencia en Data</div>
+                </div>
+                <div class="text-center p-6 metric-box bg-white/5 rounded-lg">
+                    <div class="text-4xl font-bold text-primary mb-2">High</div>
+                    <div class="text-sm uppercase tracking-wider">Incremento en Efectividad Outbound</div>
+                </div>
+                <div class="text-center p-6 metric-box bg-white/5 rounded-lg">
+                    <div class="text-4xl font-bold text-accent mb-2">100%</div>
+                    <div class="text-sm uppercase tracking-wider">Visión Cliente 360 Implementada</div>
+                </div>
+                <div class="text-center p-6 metric-box bg-white/5 rounded-lg">
+                    <div class="text-4xl font-bold text-highlight mb-2">Optimum</div>
+                    <div class="text-sm uppercase tracking-wider">ROI en Campañas de Captación</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia Profesional -->
+    <section class="py-16 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-10 text-center">Trayectoria Profesional</h2>
+        <div class="space-y-8">
+            
+            <!-- DMC -->
+            <div class="bg-white p-8 rounded-xl shadow-md border-l-4 border-primary card-hover transition-all">
+                <div class="flex flex-col md:flex-row justify-between mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800">Gerente General</h3>
+                        <p class="text-lg font-semibold text-primary">DMC</p>
+                    </div>
+                    <div class="text-gray-500 font-medium">Mayo 2023 – Actualidad</div>
+                </div>
+                <p class="mb-4">Responsable de definir y ejecutar la visión estratégica de DMC, alineando los objetivos de negocio con las tendencias de IA y Data.</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="project-badge px-3 py-1 rounded-full text-xs font-bold">ESTRATEGIA</span>
+                    <span class="project-badge px-3 py-1 rounded-full text-xs font-bold">INNOVACIÓN</span>
+                    <span class="project-badge px-3 py-1 rounded-full text-xs font-bold">FIDELIZACIÓN</span>
+                </div>
+            </div>
+
+            <!-- Prima AFP -->
+            <div class="bg-white p-8 rounded-xl shadow-md border-l-4 border-secondary card-hover transition-all">
+                <div class="flex flex-col md:flex-row justify-between mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800">Gerente de Data Analytics (CDO)</h3>
+                        <p class="text-lg font-semibold text-secondary">Prima AFP</p>
+                    </div>
+                    <div class="text-gray-500 font-medium">Oct 2021 – Abr 2023</div>
+                </div>
+                <ul class="list-disc ml-5 space-y-2 text-gray-700">
+                    <li>Liderazgo de la estrategia de Analytics y Gobierno de Datos.</li>
+                    <li><strong>Proyecto:</strong> Implementación de activos analíticos (modelos predictivos y segmentación) para optimizar la toma de decisiones.</li>
+                </ul>
+            </div>
+
+            <!-- Banco Falabella -->
+            <div class="bg-white p-8 rounded-xl shadow-md border-l-4 border-accent card-hover transition-all">
+                <div class="flex flex-col md:flex-row justify-between mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800">Sub Gerente de Analytics y Gestión de Información</h3>
+                        <p class="text-lg font-semibold text-accent">Banco Falabella</p>
+                    </div>
+                    <div class="text-gray-500 font-medium">Mar 2019 – Set 2021</div>
+                </div>
+                <ul class="list-disc ml-5 space-y-2 text-gray-700">
+                    <li><strong>Logro:</strong> Desarrollo de modelos de visión cliente, transformando la estrategia de producto a nivel cliente.</li>
+                    <li>Generación de modelos de Principalidad y Rentabilidad.</li>
+                    <li>Implementación de modelos predictivos para Captación de TC y Crédito Efectivo.</li>
+                </ul>
+            </div>
+
+            <!-- Entel -->
+            <div class="bg-white p-8 rounded-xl shadow-md border-l-4 border-highlight card-hover transition-all">
+                <div class="flex flex-col md:flex-row justify-between mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800">Jefe de Analytics - CVM</h3>
+                        <p class="text-lg font-semibold text-highlight">Entel Perú</p>
+                    </div>
+                    <div class="text-gray-500 font-medium">Jul 2016 – Feb 2019</div>
+                </div>
+                <p class="mb-4 font-semibold text-gray-800">Proyectos Clave:</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-3 bg-gray-50 rounded border-t-2 border-highlight">Modelos de Churn y Retención</div>
+                    <div class="p-3 bg-gray-50 rounded border-t-2 border-highlight">Migración Prepago a Pospago</div>
+                    <div class="p-3 bg-gray-50 rounded border-t-2 border-highlight">Captación de Hogares</div>
+                    <div class="p-3 bg-gray-50 rounded border-t-2 border-highlight">Efectividad en Campañas Outbound</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Educación y Otros -->
+    <section class="bg-gray-100 py-16 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold mb-8 border-b-2 border-secondary inline-block">Educación</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="font-bold text-lg">MBA</h4>
+                        <p class="text-secondary">Universidad Peruana de Ciencias Aplicadas</p>
+                        <p class="text-sm italic">Tesis: Plan de Negocios para Central de Riesgo Bancaria</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg">Diploma Liderazgo e Innovación</h4>
+                        <p class="text-secondary">MIT Sloan School of Management</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg">Ingeniería Estadística</h4>
+                        <p class="text-secondary">Universidad Nacional de Ingeniería (UNI)</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-8 border-b-2 border-accent inline-block">Actividades Adicionales</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-accent text-white p-3 rounded-lg"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <div>
+                            <h4 class="font-bold">Docente de Postgrado</h4>
+                            <p class="text-gray-600">UPC - Diplomado de Business Intelligence & Analytics.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="bg-primary text-black p-3 rounded-lg"><i class="fas fa-microphone"></i></div>
+                        <div>
+                            <h4 class="font-bold">Host de Podcast DMC</h4>
+                            <p class="text-gray-600">Entrevistas a expertos en Data y Analytics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-custom-gradient text-white py-12 px-6 text-center">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl font-bold mb-6">¿Interesado en potenciar su estrategia de datos?</h2>
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="https://linkedin.com" class="text-3xl hover:text-secondary transition-colors"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:jonny.chambi@dmc.pe" class="text-3xl hover:text-primary transition-colors"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="text-gray-400 text-sm">© 2025 Jonny Ronald Chambi Canahuire. Todos los derechos reservados.</p>
+            <p class="text-gray-500 text-xs mt-2">Web Personal | Lima, Marzo 2025</p>
+        </div>
+    </footer>
+
+</body>
+</html>
